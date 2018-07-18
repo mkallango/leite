@@ -30,6 +30,11 @@ test('cidade', t => {
   t.is(typeof expect, 'string')
 })
 
+test('numero', t => {
+  const expect = leite.localizacao.numero()
+  t.is(typeof expect, 'number')
+})
+
 test('cep', t => {
   const expect = leite.localizacao.cep()
   t.is(typeof expect, 'string')

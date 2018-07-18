@@ -9,6 +9,11 @@ test.beforeEach(() => {
   leite = new Leite()
 })
 
+test('ano', t => {
+  const expect = leite.veiculo.ano()
+  t.is(typeof expect, 'number')
+})
+
 test('tipo', t => {
   const expect = leite.veiculo.tipo()
   t.is(typeof expect, 'string')
@@ -39,6 +44,13 @@ test('marca', t => {
   t.is(typeof expect, 'string')
 })
 
+test('testa se marcaModelo é um objeto com payload definido', t => {
+  const marcaModelo = leite.veiculo.marcaModelo()
+  t.is(typeof marcaModelo, 'object')
+  t.is(typeof marcaModelo.marca, 'string')
+  t.is(typeof marcaModelo.modelo, 'string')
+})
+
 test('especie', t => {
   const expect = leite.veiculo.especie()
   t.is(typeof expect, 'string')
@@ -56,5 +68,10 @@ test('categoria', t => {
 
 test('carroceria', t => {
   const expect = leite.veiculo.carroceria()
+  t.is(typeof expect, 'string')
+})
+
+test('cor', t => {
+  const expect = leite.veiculo.cor()
   t.is(typeof expect, 'string')
 })
