@@ -9,6 +9,11 @@ test.beforeEach(() => {
   leite = new Leite()
 })
 
+test('ano', t => {
+  const expect = leite.veiculo.ano()
+  t.is(typeof expect, 'number')
+})
+
 test('tipo', t => {
   const expect = leite.veiculo.tipo()
   t.is(typeof expect, 'string')
@@ -63,5 +68,10 @@ test('categoria', t => {
 
 test('carroceria', t => {
   const expect = leite.veiculo.carroceria()
+  t.is(typeof expect, 'string')
+})
+
+test('cor', t => {
+  const expect = leite.veiculo.cor()
   t.is(typeof expect, 'string')
 })
