@@ -44,7 +44,7 @@ test('marca', t => {
   t.is(typeof expect, 'string')
 })
 
-test('modelo-marca', t => {
+test('testa se marcaModelo é um objeto com payload definido', t => {
   const marcaModelo = leite.veiculo.marcaModelo()
   t.is(typeof marcaModelo, 'object')
   t.is(typeof marcaModelo.marca, 'string')
