@@ -3,6 +3,7 @@
 const {
   inteiro,
   natural,
+  racional,
   n,
   cnh,
   empresa,
@@ -11,11 +12,12 @@ const {
   veiculo
 } = require('./lib')
 
-module.exports = function() {
+module.exports = function () {
   const methods = {}
 
   methods.inteiro = inteiro
   methods.natural = natural
+  methods.racional = racional
   methods.n = n
   methods.cnh = {
     categoria: cnh.categoria,
@@ -62,7 +64,8 @@ module.exports = function() {
     placa: veiculo.placa,
     restricao: veiculo.restricao,
     tipo: veiculo.tipo,
-    renavam: veiculo.renavam
+    renavam: veiculo.renavam,
+    valor: veiculo.valor
   }
 
   return methods
