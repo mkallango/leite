@@ -34,6 +34,8 @@ test('placa', t => {
   t.is(typeof expect, 'string')
 })
 
+test.todo('placa - verifica composicao da string')
+
 test('modelo', t => {
   const expect = leite.veiculo.modelo()
   t.is(typeof expect, 'string')
@@ -44,7 +46,7 @@ test('marca', t => {
   t.is(typeof expect, 'string')
 })
 
-test('testa se marcaModelo é um objeto com payload definido', t => {
+test('testa se marcaModelo é um objeto definido', t => {
   const marcaModelo = leite.veiculo.marcaModelo()
   t.is(typeof marcaModelo, 'object')
   t.is(typeof marcaModelo.marca, 'string')
