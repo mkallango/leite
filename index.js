@@ -12,7 +12,7 @@ const {
   veiculo
 } = require('./lib')
 
-module.exports = function() {
+module.exports = function () {
   const methods = {}
 
   methods.inteiro = inteiro
